@@ -18,6 +18,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatSidenavModule,
     MatListModule,
     FlexLayoutModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   exports: [MatSidenavModule],
   providers: [FlexLayoutModule],

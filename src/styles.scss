@@ -11,3 +11,11 @@ body {
   margin: 0;
   font-family: "Newsreader", serif;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  button {
+    margin-top: 10px;
+  }
+}
