@@ -1,2 +1,40 @@
-<p>home works!</p>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button fxShow="true" fxHide.gt-sm="true">
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>Formland</h1>
+    <span class="menu-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button [routerLink]="'/basic'"> Basic </a>
+      <a mat-button [routerLink]="'/array'">Array</a>
+      <a mat-button [routerLink]="'/nested'">Nested</a>
+      <a mat-button [routerLink]="'/submit'">Submit</a>
+      <a mat-button [routerLink]="'/valid'">Valid</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-button [routerLink]="'/basic'"> Basic </a>
+      <a mat-button [routerLink]="'/array'">Array</a>
+      <a mat-button [routerLink]="'/nested'">Nested</a>
+      <a mat-button [routerLink]="'/submit'">Submit</a>
+      <a mat-button [routerLink]="'/valid'">Valid</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="sidenav-content-wrapper" style="height: calc(100vh - 56px)">
+      <mat-card
+        ><h1>Reactive Form Examples</h1>
+        <p>Exploring reactive forms within Angular.</p>
+        <p>
+          Select the example you wish to review using the top or side
+          navigation.
+        </p>
+      </mat-card>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

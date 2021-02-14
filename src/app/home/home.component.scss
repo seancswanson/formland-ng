@@ -1,0 +1,22 @@
+mat-sidenav {
+  min-width: 200px;
+  width: 25vw;
+}
+
+mat-sidenav-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sidenav-content-wrapper {
+  padding: 10px;
+}
+
+.mat-list-base {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-toolbar-row {
+  justify-content: space-between;
+}
