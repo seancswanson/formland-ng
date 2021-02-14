@@ -20,3 +20,16 @@ mat-sidenav-content {
 mat-toolbar-row {
   justify-content: space-between;
 }
+
+mat-toolbar,
+mat-nav-list {
+  a {
+    color: white;
+    transition: 0.3s all ease;
+
+    &.active-link {
+      background: #fff;
+      color: black;
+    }
+  }
+}

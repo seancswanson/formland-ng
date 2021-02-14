@@ -6,22 +6,42 @@
     <h1>Formland</h1>
     <span class="menu-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
-      <a mat-button [routerLink]="'/basic'"> Basic </a>
-      <a mat-button [routerLink]="'/array'">Array</a>
-      <a mat-button [routerLink]="'/nested'">Nested</a>
-      <a mat-button [routerLink]="'/submit'">Submit</a>
-      <a mat-button [routerLink]="'/valid'">Valid</a>
+      <a mat-button [routerLink]="'/basic'" routerLinkActive="active-link">
+        Basic
+      </a>
+      <a mat-button [routerLink]="'/array'" routerLinkActive="active-link"
+        >Array</a
+      >
+      <a mat-button [routerLink]="'/nested'" routerLinkActive="active-link"
+        >Nested</a
+      >
+      <a mat-button [routerLink]="'/submit'" routerLinkActive="active-link"
+        >Submit</a
+      >
+      <a mat-button [routerLink]="'/valid'" routerLinkActive="active-link"
+        >Valid</a
+      >
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-      <a mat-button [routerLink]="'/basic'"> Basic </a>
-      <a mat-button [routerLink]="'/array'">Array</a>
-      <a mat-button [routerLink]="'/nested'">Nested</a>
-      <a mat-button [routerLink]="'/submit'">Submit</a>
-      <a mat-button [routerLink]="'/valid'">Valid</a>
+      <a mat-button [routerLink]="'/basic'" routerLinkActive="active-link">
+        Basic
+      </a>
+      <a mat-button [routerLink]="'/array'" routerLinkActive="active-link"
+        >Array</a
+      >
+      <a mat-button [routerLink]="'/nested'" routerLinkActive="active-link"
+        >Nested</a
+      >
+      <a mat-button [routerLink]="'/submit'" routerLinkActive="active-link"
+        >Submit</a
+      >
+      <a mat-button [routerLink]="'/valid'" routerLinkActive="active-link"
+        >Valid</a
+      >
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
